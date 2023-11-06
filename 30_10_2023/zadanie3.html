@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let wynik = parseFloat(prompt("Podaj uzyskany wynik w punktach: "));
+        let maxPunkty = parseFloat(prompt("Podaj maksymalną ilość punktów do zdobycia: "));
+        let procent = (wynik / maxPunkty) * 100;
+        if (procent < 30) {
+            alert("Niedostateczny");
+        } else if (procent < 50) {
+            alert("Dopuszczający");
+        } else if (procent < 75) {
+            alert("Dostateczny");
+        } else if (procent < 90) {
+            alert("Dobry");
+        } else if (procent < 100) {
+            alert("Bardzo dobry");
+        } else {
+            alert("Celujący");
+        }
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

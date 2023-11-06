@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function nettoNaBrutto(cenaNetto, podatekProcent) {
+        return cenaNetto * (1 + (podatekProcent / 100));
+        }
+        function bruttoNaNetto(cenaBrutto, podatekProcent) {
+        return cenaBrutto / (1 + (podatekProcent / 100));
+        }
+        let wybor = prompt("Co chcesz obliczyć? (netto na brutto - 1, brutto na netto - 2): ");
+        if (wybor === '1') {
+            let cenaNetto = parseFloat(prompt("Podaj cenę netto: "));
+            let podatekProcent = parseFloat(prompt("Podaj wartość podatku (w procentach): "));
+            let cenaBrutto = nettoNaBrutto(cenaNetto, podatekProcent);
+            alert("Cena brutto wynosi: " + cenaBrutto);
+        } else if (wybor === '2') {
+            let cenaBrutto = parseFloat(prompt("Podaj cenę brutto: "));
+            let podatekProcent = parseFloat(prompt("Podaj wartość podatku (w procentach): "));
+            let cenaNetto = bruttoNaNetto(cenaBrutto, podatekProcent);
+            alert("Cena netto wynosi: " + cenaNetto);
+        } else {
+            alert("Niepoprawny wybór.");
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
