@@ -1,0 +1,9 @@
+ZADANIE 1
+Zalety:
+- czystość i czytelność kodu
+- ponowne wykorzystanie kodu
+- zwiększenie wydajności
+Wady:
+- Dodatkowe zapytanie HTTP
+- Brak kontroli nad wczytywaniem
+- Problemy z CORS (Cross-Origin Resource Sharing)
