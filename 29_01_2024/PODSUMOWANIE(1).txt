@@ -1,0 +1,14 @@
+Zadanie 1:
+A. for.
+
+Zadanie 2:
+C. do ... while.
+
+Zadanie 3:
+Poprawny zapis: for (i = 0; i < 100; i++)
+
+Zadanie 4:
+Nieskończona ilość razy, ponieważ warunek while (210) zawsze będzie prawdziwy.
+
+Zadanie 5:
+D. 55. (Zmienna k będzie sumą liczb od 1 do 10: 1+2+3+...+10 = 55.)

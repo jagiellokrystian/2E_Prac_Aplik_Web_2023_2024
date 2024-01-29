@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyświetlanie liczb parzystych</title>
+</head>
+<body>
+
+  <h1>Liczby parzyste:</h1>
+
+  <script>
+    document.write("<p>for loop: ");
+    for (let i = 100; i < 110; i += 2) {
+      document.write(i + " ");
+    }
+    document.write("</p>");
+  </script>
+
+  <script>
+    document.write("<p>while loop: ");
+    let j = 100;
+    while (j < 110) {
+      document.write(j + " ");
+      j += 2;
+    }
+    document.write("</p>");
+  </script>
+
+  <script>
+    document.write("<p>do...while loop: ");
+    let k = 100;
+    do {
+      document.write(k + " ");
+      k += 2;
+    } while (k < 110);
+    document.write("</p>");
+  </script>
+
+</body>
+</html>

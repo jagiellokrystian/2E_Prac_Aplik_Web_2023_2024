@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wydawanie Reszty</title>
+</head>
+<body>
+
+  <script>
+    function calculateChange(amount) {
+      const denominations = [50, 20, 10, 5, 2, 1];
+      let remainingAmount = amount;
+      let change = [];
+
+      for (let denomination of denominations) {
+        const count = Math.floor(remainingAmount / denomination);
+        remainingAmount %= denomination;
+        if (count > 0) {
+          change.push({ denomination, count });
+        }
+      }
+
+      return change;
+    }
+
+    const amount = parseFloat(prompt("Podaj kwotę do wydania reszty:"));
+    const changeResult = calculateChange(amount);
+
+    document.write("<h1>Wynik:</h1>");
+    document.write("<p>Kwota do wydania reszty: " + amount + "</p>");
+    document.write("<p>Reszta:</p>");
+    document.write("<ul>");
+    for (let item of changeResult) {
+      document.write("<li>" + item.count + " x " + item.denomination + " zł</li>");
+    }
+    document.write("</ul>");
+  </script>
+
+</body>
+</html>

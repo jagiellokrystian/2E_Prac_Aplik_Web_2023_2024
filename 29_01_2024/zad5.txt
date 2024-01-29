@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorytm Newtona-Raphsona</title>
+</head>
+<body>
+
+  <h1>Obliczanie pierwiastka kwadratowego</h1>
+
+  <script>
+    function newtonRaphson(inputNumber, precision) {
+      let guess = inputNumber / 2;
+      let iterations = 0;
+
+      while (Math.abs(guess * guess - inputNumber) > precision) {
+        guess = 0.5 * (guess + inputNumber / guess);
+        iterations++;
+      }
+
+      return { result: guess, iterations: iterations };
+    }
+
+    let userNumber = parseFloat(prompt("Wprowadź liczbę do obliczenia pierwiastka kwadratowego:"));
+    let userPrecision = parseFloat(prompt("Podaj dokładność obliczeń (np. 0.0001):"));
+
+    if (!isNaN(userNumber) && !isNaN(userPrecision) && userNumber >= 0 && userPrecision > 0) {
+      let result = newtonRaphson(userNumber, userPrecision);
+
+      document.write("<p>Pierwiastek kwadratowy z " + userNumber + " to około " + result.result.toFixed(6) + "</p>");
+      document.write("<p>Liczba iteracji: " + result.iterations + "</p>");
+    } else {
+      alert("Podano nieprawidłowe dane. Spróbuj ponownie.");
+    }
+  </script>
+
+</body>
+</html>

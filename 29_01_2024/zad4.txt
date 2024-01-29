@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikacja do wprowadzania liczb</title>
+</head>
+<body>
+
+  <h1>Aplikacja do wprowadzania liczb</h1>
+
+  <script>
+    let numbers = [];
+    let userInput;
+
+    do {
+      userInput = parseFloat(prompt("Wprowadź liczbę (wprowadź 0, aby zakończyć):"));
+
+      if (!isNaN(userInput)) {
+        numbers.push(userInput);
+      } else {
+        alert("To nie jest poprawna liczba. Spróbuj ponownie.");
+      }
+    } while (userInput !== 0);
+
+    document.write("<p>Wprowadzone liczby: " + numbers.join(", ") + "</p>");
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Użyj pętli for, gdy wiesz, ile razy chcesz powtórzyć kod.
+
+Użyj pętli while, gdy warunek powtórzenia jest sprawdzany przed każdą iteracją i ilość iteracji może być nieznana z góry.
+
+Użyj pętli do...while, gdy chcesz, aby kod został wykonany przynajmniej raz, niezależnie od warunku początkowego. Warunek sprawdzany jest po każdej iteracji.
