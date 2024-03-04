@@ -1,0 +1,32 @@
+<DOCTYPE HTML>
+<html>
+    <head>
+        <title>Krystian Jagiełło</title>
+        <script>
+            let userArray = [];
+            for (let i = 0; i < 10; i++) {
+                userArray.push(parseInt(prompt("Podaj wartość do tablicy:")));
+            }
+            let min = Math.min(...userArray);
+            let max = Math.max(...userArray);
+            let average = userArray.reduce((acc, val) => acc + val, 0) / userArray.length;
+            let countOf3 = userArray.filter(num => num === 3).length;
+            userArray.sort((a, b) => a - b);
+            let median;
+            if (userArray.length % 2 === 0) {
+                median = (userArray[userArray.length / 2 - 1] + userArray[userArray.length / 2]) / 2;
+            } else {
+                median = userArray[Math.floor(userArray.length / 2)];
+            }
+            let threeSmallest = userArray.slice(0, 3);
+            let threeLargest = userArray.slice(-3);
+            userArray = userArray.map(num => num ** 2);
+            let evenCount = userArray.filter(num => num % 2 === 0).length;
+            let oddCount = userArray.filter(num => num % 2 !== 0).length;
+            let divisibleBy3Count = userArray.filter(num => num % 3 === 0).length;
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
