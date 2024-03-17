@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krystian Jagiełło</title>
+
+    <script>
+        const tab = []; //pusta tablica
+        const tab2 = [1, 2, 3, 4];
+        const tab3 = ["Marcin", "Ania", "Agnieszka"];
+
+        const a = "ALA";
+        const b = 234;
+        const c = "PIES";
+        const tab1 = [a, b, c, "KOT", {...}];
+
+        const tab4 = new Array(10);
+        console.log(tab);
+        const tab5 = new Array("Ala", "Bala", "Cala");
+        console.log(tab);
+
+        const tab6 = ["Ala", "ma", "rudego", "kota"];
+        console.log( tab[0] );
+        console.log( tab[1] );
+        console.log( tab[2] );
+        console.log( tab[3] );
+        console.log( tab[tab.length-1] );
+
+        const tab7 = ["Ala", "ma", "rudego", "kota"];
+        tab.at(0);
+        tab.at(1);
+        tab.at(2);
+        tab.at(-1); 
+        tab.at(-2);
+
+        const tab8 = ["Marcin", "Ania", "Agnieszka"];
+        console.log( tab8.length );
+        console.log( tab8[ tab8.length-1 ] );
+        for (let i=0; i<tab.length; i++) {
+            console.log(tab[i]);
+        }
+
+        const tab9 = ["Marcin", "Ania", "Agnieszka"];
+        tab.push("Piotrek");
+        console.log(tab);
+        tab.push("Y", "Z");
+        console.log(tab);
+
+        const tab10 = ["Marcin", "Ania", "Agnieszka"];
+        tab10[3] = "Piotrek";
+        tab10[tab10.length] = "Piotrek";
+        console.log(tab10);
+
+        const tab11 = ["ala", "bala"]
+        const ob = { name : "Piotr" }
+        console.log(Array.isArray(tab11));
+        console.log(Array.isArray(ob));
+        console.log(typeof tab);
+        console.log(typeof ob);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
